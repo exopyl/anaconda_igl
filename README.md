@@ -31,6 +31,6 @@ mp.plot(v, f, v[:, 0])
 
 ## References
 
-- https://www.anaconda.com/[Anaconda]
-- https://github.com/libigl/libigl/[libigl]
-- https://geometryprocessing.github.io/geometric-computing-python/viz_basic/[viz_basic]
+- https://www.anaconda.com/
+- https://github.com/libigl/libigl/
+- https://geometryprocessing.github.io/geometric-computing-python/viz_basic/
