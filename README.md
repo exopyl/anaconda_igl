@@ -3,13 +3,13 @@
 ## Build
 
 ```sh
-docker build -t anaconda3d .
+docker build -t anaconda_igl .
 ```
 
 ## Run
 
 ```sh
-docker run -i -t -p 8888:8888 -v ${PWD}\:/tmp/ anaconda3d /bin/bash -c "/opt/conda/bin/jupyter notebook --notebook-dir=/tmp/ --ip='0.0.0.0' --port=8888 --no-browser --allow-root --NotebookApp.token=toto"
+docker run -i -t -p 8888:8888 -v ${PWD}\:/tmp/ anaconda_igl /bin/bash -c "/opt/conda/bin/jupyter notebook --notebook-dir=/tmp/ --ip='0.0.0.0' --port=8888 --no-browser --allow-root --NotebookApp.token=toto"
 ```
 
 ## Test
