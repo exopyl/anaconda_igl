@@ -29,7 +29,7 @@ shading = {"flat":True, "wireframe": True, "wire_color": "black", "wire_width": 
 p = mp.plot(v, f, c, shading=shading)
 ```
 
-
+![teapot](teapot.png)
 
 ## References
 
