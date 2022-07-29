@@ -24,7 +24,9 @@ import meshplot as mp
 import numpy as np
 
 v, f = igl.read_triangle_mesh("data/teapot.obj")
-mp.plot(v, f, v[:, 0])
+c = np.array([1, 0, 0])
+shading = {"flat":True, "wireframe": True, "wire_color": "black", "wire_width": 0.01}
+p = mp.plot(v, f, c, shading=shading)
 ```
 
 ![teapot](teapot.png)
