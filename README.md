@@ -27,7 +27,7 @@ v, f = igl.read_triangle_mesh("data/teapot.obj")
 mp.plot(v, f, v[:, 0])
 ```
 
-![teapot](teapot.png | width=600)
+![teapot](teapot.png)
 
 ## References
 
