@@ -36,3 +36,4 @@ p = mp.plot(v, f, c, shading=shading)
 - https://www.anaconda.com/
 - https://github.com/libigl/libigl/
 - https://geometryprocessing.github.io/geometric-computing-python/viz_basic/
+- https://skoch9.github.io/meshplot/
