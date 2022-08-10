@@ -23,4 +23,7 @@ RUN conda install igl
 RUN conda install wildmeshing
 RUN conda install polyfempy
 
+RUN apt-get install ffmpeg libsm6 libxext6  -y
+RUN pip install open3d
+
 RUN mkdir /opt/notebooks
