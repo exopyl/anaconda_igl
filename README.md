@@ -1,4 +1,4 @@
-# Anaconda & igl with docker
+# Anaconda & igl & open3d with docker
 
 ## Build
 
@@ -31,9 +31,25 @@ p = mp.plot(v, f, c, shading=shading)
 
 ![teapot](teapot.png)
 
+```
+import numpy as np
+import open3d as o3d
+import meshplot as mp
+
+mesh = o3d.io.read_triangle_mesh("data/teapot.obj")
+f = np.asarray(mesh.triangles)
+v = np.asarray(mesh.vertices)
+c = (1.0, 0.0, 0.0)
+
+shading = {"flat":True, "wireframe": True, "wire_color": "black", "wire_width": 0.01}
+p = mp.plot(v, f, c, shading=shading)
+```
+
 ## References
 
-- https://www.anaconda.com/
-- https://github.com/libigl/libigl/
+- anaconda : https://www.anaconda.com/
+- libigl : https://github.com/libigl/libigl/
 - https://geometryprocessing.github.io/geometric-computing-python/viz_basic/
-- https://skoch9.github.io/meshplot/
+- meshplot : https://skoch9.github.io/meshplot/
+- open3d : http://www.open3d.org/
+- visualization with open3d : https://colab.research.google.com/drive/1CR_HDvJ2AnjJV3Bf5vwP70K0hx3RcdMb
