@@ -17,7 +17,8 @@ docker run -i -t -p 8888:8888 -v ${PWD}\:/tmp/ anaconda_igl /bin/bash -c "/opt/c
 - Run container
 - Go to http://localhost:8888
 - Open a new Python 3 notebook
-- Execute the following code :
+- Execute the following code to use igl :
+
 ```python
 import igl
 import meshplot as mp
@@ -31,7 +32,9 @@ p = mp.plot(v, f, c, shading=shading)
 
 ![teapot](teapot.png)
 
-```
+- Execute the following code to use open3d :
+
+```python
 import numpy as np
 import open3d as o3d
 import meshplot as mp
